@@ -11,10 +11,3 @@ SAC;one_day.sac;SAC full;32.96;32.97;0.04;12.88;3,5;b
 SUDS;10081701.WVP;SUDS;2.53;2.59;2.43;1.36;1;d
 UW;99011116541W;UW;37.66;40.29;6.98;26.9;1;e
 WIN;2014092709*.cnt;WIN;10.99;11.25;2.33;24.67;2,3;f
-;;;;;;;;
-;0 = SeisIO: read_data ignores event info;;;;;;;
-;1 = obspy: no reader;;;;;;;
-;2 = obspy: reader incompatible with file version;;;;;;;
-;3 = SeisIO: read_data with KW full=true;;;;;;;
-;4 = SeisIO: read_data with KW nx_new=36000, nx_add=1400000;;;;;;;
-;5 = obspy: read with KW debug=True;;;;;;;
