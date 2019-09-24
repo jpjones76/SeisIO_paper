@@ -1,8 +1,8 @@
 # Prereqs:
 # conda install pytest memory_profiler pyasdf
-# conda install -c conda-forge pytest-benchmark # NOT NEEDED
+# (then create an ObsPy environment so Python doesn't go self-incompatible)
 import numpy as np
-import glob
+# import glob
 import gc
 import os
 import sys
@@ -11,8 +11,8 @@ from pyasdf import ASDFDataSet
 from obspy import read
 from memory_profiler import memory_usage
 from timeit import default_timer as timer
-from time import sleep
 
+# from https://stackoverflow.com/questions/449560/how-do-i-determine-the-size-of-an-object-in-python
 def get_obj_size(obj):
     marked = {id(obj)}
     obj_q = [obj]
@@ -45,12 +45,11 @@ rubric =[["20050904.PA01.E.sac.ah",     "AH"],              # 0
          ["one_day.mseed",              "MSEED"],           # 4
          ["Restricted/SHW.UW.mseed",    "MSEED"],           # 5
          ["test_PASSCAL.segy",          "SU"],              # 6 unsupported -- SU SEG Y != PASSCAL SEG Y
-         ["test_PASSCAL.segy",          "SU"],              # 7 unsupported -- SU SEG Y != PASSCAL SEG Y
-         ["one_day.sac",                "SAC"],             # 8
-         ["one_day.sac",                "SAC"],             # 9
-         ["SUDS/10081701.WVP",          "SUDS"],            # 10 unsupported
-         ["99011116541W",               "UW"],              # 11 unsupported
-         ["Restricted/2014092709*.cnt", "WIN"]]             # 12 fails: ObsPy recognizes files as valid but reads no trace data; doesn't support wildcards.
+         ["one_day.sac",                "SAC"],             # 7
+         ["SUDS/10081701.WVP",          "SUDS"],            # 8 unsupported
+         ["99011116541W",               "UW"],              # 9 unsupported
+         ["Restricted/2014092709*.cnt", "WIN"]]             # 10 fails: ObsPy recognizes files as valid but reads no trace data.
+                                                            #           WIN format also doesn't support wildcards in ObsPy.
 T = np.zeros((1+len(rubric), n, 3), dtype=float)
 # 0 size
 # 1 memory
@@ -63,22 +62,16 @@ for j in [0,4,5,8,9]:
         s = path + '/' + rubric[j][0]
         fmt = rubric[j][1]
         opts = ' '
-        if j == 9:
-            T[j,i,1] = np.mean(memory_usage((read, (s,), {'format' : fmt, 'debug_headers' : True, 'check-compression' : False}), timeout=10.0, include_children=True, multiprocess=True))
-            ts = timer()
-            rt = read(s, format=fmt)
-            te = timer()
-            opts = 'debug'
-        # elif j == 1:
+        # if j == 1:
             # ds = ASDFDataSet(s)
             # s = obspy.UTCDateTime("2019-07-07T23:00:00.000000Z")
             # t = obspy.UTCDateTime("2019-07-09T00:00:00.000000Z")
-            # how do I load data between s and t from ds into an ObsPy Stream?
-        else:
-            T[j,i,1] = np.mean(memory_usage((read, (s,), {'format' : fmt, 'check-compression' : False}), timeout=10.0, include_children=True, multiprocess=True))
-            ts = timer()
-            rt = read(s, format=fmt)
-            te = timer()
+            # how does one load data from ASDF into ObsPy...?
+        # else:
+        T[j,i,1] = np.mean(memory_usage((read, (s,), {'format' : fmt, 'check-compression' : False}), timeout=10.0, include_children=True, multiprocess=True))
+        ts = timer()
+        rt = read(s, format=fmt)
+        te = timer()
         T[j,i,0] = get_obj_size(rt)/(1024**2)
         T[j,i,2] = (te-ts)*1000.0
         gc.collect()

@@ -17,9 +17,7 @@ test0 = String[
                 "geocsv_slist.csv"            "geocsv.slist"  " "
                 "one_day.mseed"               "mseed"         " "
                 "Restricted/SHW.UW.mseed"     "mseed"         "lo-mem"
-                "test_PASSCAL.segy"           "passcal"       " "
                 "test_PASSCAL.segy"           "passcal"       "full"
-                "one_day.sac"                 "sac"           " "
                 "one_day.sac"                 "sac"           "full"
                 "SUDS/10081701.WVP"           "suds"          " "
                 "99011116541W"                "uw"            " "
@@ -86,5 +84,5 @@ function run_benchmarks(n_0::Int64=1, n_1::Int64=0)
   return R
 end
 
-R = run_benchmarks(1,1)
+R = run_benchmarks()
 nice_disp(R)
