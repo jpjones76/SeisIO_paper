@@ -1,0 +1,27 @@
+Data Sources and A
+
+1 in SeisIO/test/SampleFiles; acquired via. IRIS FDSN dataselect. For request parameters please contact the corresponding author.
+2 in SeisIO/test/SampleFiles; contributed by M. Denolle.
+3 station SHW from IRIS special data set: Mt. St. Helens 1980 (virutal network _STHELENS-1980). Available from IRIS, Seattle, WA, USA.
+4 Redistribution prohibited; to request this file, please contact Dr. W. McCausland, USGS-VDAP.
+5 Found in SeisIO/test/SampleFiles; data from Jones \& Malone (2006).
+6 Redistribution prohibited; data from HiNet (NIED 2019). For request parameters please contact the corresponding author.
+7 Found in SeisIO/test/SampleFiles; contributed by Prof. K. Creager <kcc@uw.edu>.
+
+
+Refs
+ National Research Institute for Earth Science and Disaster Resilience (2019), NIED Hi-net, National Research Institute for Earth Science and Disaster Resilience, doi:10.17598/NIED.0003.
+
+ 1 = obspy: no reader
+ 2 = obspy: reader incompatible with file version
+ 3 = SeisIO: read_data with KW full=true
+ 4 = SeisIO: read_data with KW nx_new=36000, nx_add=1400000
+ 5 = obspy: read with KW debug=True
+
+ in SeisIO/test/SampleFiles acquired via. IRIS FDSN dataselect. For request parameters please contact the corresponding author.
+ in SeisIO/test/SampleFiles contributed by M. Denolle.
+ station SHW from IRIS special data set: Mt. St. Helens 1980 (virutal network _STHELENS-1980). Available from IRIS Seattle WA USA.
+ Redistribution prohibited to request this file please contact Dr. W. McCausland USGS-VDAP.
+ Found in SeisIO/test/SampleFiles data from Jones \& Malone (2006).
+ Redistribution prohibited data from HiNet (NIED 2019). For request parameters please contact the corresponding author.
+ Found in SeisIO/test/SampleFiles contributed by Prof. K. Creager <kcc@uw.edu>.

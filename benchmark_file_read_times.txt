@@ -1,0 +1,28 @@
+julia> cd("/data2/Code/Julia/SeisIO/paper/"); include("benchmark_file_reads.jl")
+2019-09-22T06:14:51.763: test 1/13, benchmark: ah1, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/lhz.ah, opts =
+2019-09-22T06:15:23.766: test 2/13, benchmark: asdf, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/2019_07_07_00_00_00.h5, opts =
+2019-09-22T06:16:02.077: test 3/13, benchmark: geocsv, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/FDSNWS.IRIS.geocsv, opts =
+2019-09-22T06:16:51.393: test 4/13, benchmark: geocsv.slist, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/geocsv_slist.csv, opts =
+2019-09-22T06:17:31.869: test 5/13, benchmark: mseed, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/one_day.mseed, opts =
+2019-09-22T06:18:07.430: test 6/13, benchmark: mseed, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/Restricted/SHW.UW.mseed, opts = lo-mem
+2019-09-22T06:18:35.776: test 7/13, benchmark: passcal, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/test_PASSCAL.segy, opts =
+2019-09-22T06:19:06.683: test 8/13, benchmark: passcal, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/test_PASSCAL.segy, opts = full
+2019-09-22T06:19:37.479: test 9/13, benchmark: sac, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/one_day.sac, opts =
+2019-09-22T06:20:06.899: test 10/13, benchmark: sac, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/one_day.sac, opts = full
+2019-09-22T06:20:35.831: test 11/13, benchmark: suds, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/SUDS/10081701.WVP, opts =
+2019-09-22T06:21:04.601: test 12/13, benchmark: uw, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/99011116541W, opts =
+2019-09-22T06:21:35.467: test 13/13, benchmark: win32, file = /data2/Code/Julia/SeisIO/paper/../test/SampleFiles/Restricted/2014092709*.cnt, opts = win
+       Format                       Filename      Opts   Sz_[MB]  Mem_[MB]  Ovh_[%]   Allocs   T_[ms]   GC_[%]    N
+          ah1                         lhz.ah                0.13      0.16   26.93%      578     0.56    0.00%  100
+         asdf         2019_07_07_00_00_00.h5               13.73     13.85    0.86%     1508    52.21    0.00%  100
+       geocsv             FDSNWS.IRIS.geocsv                0.39      0.44   12.30%      794   209.84    0.00%  100
+ geocsv.slist               geocsv_slist.csv                6.80      6.87    1.07%     1360   123.08    0.00%  100
+        mseed                  one_day.mseed               32.96     32.96    0.01%       58    71.06    0.33%  100
+        mseed                   SHW.UW.mseed    lo-mem      5.35      6.19   15.75%     1714     9.53    0.00%  100
+      passcal              test_PASSCAL.segy               32.96     32.98    0.05%      125    22.37    2.98%  100
+      passcal              test_PASSCAL.segy      full     32.96     32.99    0.08%      163    22.42    2.97%  100
+          sac                    one_day.sac               32.96     32.97    0.03%      103    12.77    1.83%  100
+          sac                    one_day.sac      full     32.96     32.97    0.04%      123    12.88    1.84%  100
+         suds                   10081701.WVP                2.53      2.59    2.43%      918     1.36    0.00%  100
+           uw                   99011116541W               37.66     40.29    6.98%     8626    26.90    2.95%  100
+        win32                2014092709*.cnt       win     10.99     11.25    2.33%     4235    24.67    0.00%  100

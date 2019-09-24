@@ -1,0 +1,22 @@
+;;;SeisIO v0.4.0;;;;;
+Test Name;File;Format;Sz_[MB];Mem_[MB];Ovh_[%];T_[ms];Notes;Data Src
+AH;20050904.PA01.E.sac.ah;AH;0.33;0.33;1.16;0.63;0;g
+ASDF;2019_07_07_00_00_00.h5;ASDF;26.37;26.49;0.45;93.92;;b
+GeoCSV-tspair;FDSNWS.IRIS.geocsv;GeoCSV tspair;0.39;0.44;12.30;209.84;1;a
+GeoCSV-slist;geocsv_slist.csv;GeoCSV slist;6.8;6.87;1.07;123.08;1;a
+MSEED-1;one_day.mseed;MSEED;32.96;32.96;0.01;71.06;;b
+MSEED-2;SHW.UW.mseed;MSEED;5.35;6.19;15.75;9.53;4;c
+PASSCAL;test_PASSCAL.segy;PASSCAL;32.96;32.98;0.05;22.37;2;a
+PASSCAL-full;test_PASSCAL.segy;PASSCAL;32.96;32.99;0.08;22.42;2,3;a
+SAC;one_day.sac;SAC;32.96;32.97;0.03;12.77;;b
+SAC-full;one_day.sac;SAC full;32.96;32.97;0.04;12.88;3,5;b
+SUDS;10081701.WVP;SUDS;2.53;2.59;2.43;1.36;1;d
+UW;99011116541W;UW;37.66;40.29;6.98;26.9;1;e
+WIN;2014092709*.cnt;WIN;10.99;11.25;2.33;24.67;2,3;f
+;;;;;;;;
+;0 = SeisIO: read_data ignores event info;;;;;;;
+;1 = obspy: no reader;;;;;;;
+;2 = obspy: reader incompatible with file version;;;;;;;
+;3 = SeisIO: read_data with KW full=true;;;;;;;
+;4 = SeisIO: read_data with KW nx_new=36000, nx_add=1400000;;;;;;;
+;5 = obspy: read with KW debug=True;;;;;;;

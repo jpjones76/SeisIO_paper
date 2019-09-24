@@ -1,0 +1,13 @@
+;;Obspy 1.1.1;;;;SeisIO v0.4.0;;;;SAC v101.6a;;;;
+File;Name;Sz_[MB];Mem_[MB];Ovh_[%];T_[ms];Sz_[MB];Mem_[MB];Ovh_[%];T_[ms];Mem_[MB];T_[ms];Notes;Data Source;Contact
+20050904.PA01.E.sac.ah;AH;0.66;135.82;20338.65;65.53;0.33;0.33;1.16;0.63;0;0;0;K. Creager;K. Creager
+2019_07_07_00_00_00.h5;ASDF;0;0;0;0;26.37;26.49;0.45;93.92;0;0;;M. Denolle;M. Denolle
+FDSNWS.IRIS.geocsv;GeoCSV-tspair;0;0;0;0;0.39;0.44;12.30;209.84;0;0;1;IRIS FDSN;J. Jones
+geocsv_slist.csv;GeoCSV-slist;0;0;0;0;6.8;6.87;1.07;123.08;0;0;1;IRIS FDSN;J. Jones
+one_day.mseed;MSEED-1;32.96;388.89;1079.82;106.8;32.96;32.96;0.01;71.06;0;0;;M. Denolle;M. Denolle
+SHW.UW.mseed;MSEED-2;5.65;246.84;4271.6;36.12;5.35;6.19;15.75;9.53;0;0;4;St. Helens 1980;S. Malone
+test_PASSCAL.segy;PASSCAL;0;0;0;0;32.96;32.99;0.08;22.42;0;0;2,3;IRIS FDSN;J. Jones
+one_day.sac;SAC;32.96;409.71;1142.96;58.19;32.96;32.97;0.04;12.88;66.02;113.58;3,5;M. Denolle;M. Denolle
+10081701.WVP;SUDS;0;0;0;0;2.53;2.59;2.43;1.36;5.46;15.35;1;OVISCORI;W. McCausland
+99011116541W;UW;0;0;0;0;37.66;40.29;6.98;26.9;0;0;1;PNSN;S. Malone
+2014092709*.cnt;WIN;0;0;0;0;10.99;11.25;2.33;24.67;0;0;2,3;HiNet;HiNet
