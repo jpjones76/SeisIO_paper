@@ -1,2 +1,2 @@
-readsuds ../test/SampleFiles/SUDS/10081701.WVP
+readsuds 10081701.WVP
 q

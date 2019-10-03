@@ -1,2 +1,2 @@
-r ../test/SampleFiles/one_day.sac
+r ../Benchmarks/1day-100hz.sac
 q
