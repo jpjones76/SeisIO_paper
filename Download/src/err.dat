@@ -1,0 +1,539 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+mkdir: cannot create directory ‘../output’: File exists
+mkdir: cannot create directory ‘../output/1’: File exists
+ERROR: LoadError: ArgumentError: Package SeisIO not found in current path:
+- Run `import Pkg; Pkg.add("SeisIO")` to install the SeisIO package.
+
+Stacktrace:
+ [1] require(::Module, ::Symbol) at ./loading.jl:876
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Distributed/src/macros.jl:181
+ [3] include at ./boot.jl:328 [inlined]
+ [4] include_relative(::Module, ::String) at ./loading.jl:1094
+ [5] include(::Module, ::String) at ./Base.jl:31
+ [6] exec_options(::Base.JLOptions) at ./client.jl:295
+ [7] _start() at ./client.jl:464
+in expression starting at /n/home03/kokubo/scratchkurama/SeisIO_Validation/src/download_exec/seisdownload_TA.jl:6
+slurmstepd: error: *** JOB 25963076 ON holy7c24502 CANCELLED AT 2019-10-01T01:00:18 ***
+mkdir: cannot create directory ‘../output/2’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c24501.rc.fas.harvard.edu:452918] 1 more process has sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c24501.rc.fas.harvard.edu:452918] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c24501.rc.fas.harvard.edu:452918] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+mkdir: cannot create directory ‘../output/4’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c24501.rc.fas.harvard.edu:454753] 3 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c24501.rc.fas.harvard.edu:454753] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c24501.rc.fas.harvard.edu:454753] 3 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+mkdir: cannot create directory ‘../output/8’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c24501.rc.fas.harvard.edu:456457] 7 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c24501.rc.fas.harvard.edu:456457] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c24501.rc.fas.harvard.edu:456457] 7 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+mkdir: cannot create directory ‘../output/10’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c24501.rc.fas.harvard.edu:457001] 9 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c24501.rc.fas.harvard.edu:457001] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c24501.rc.fas.harvard.edu:457001] 9 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+mkdir: cannot create directory ‘../output/1’: File exists
+mkdir: cannot create directory ‘../output/1/obspy’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+mkdir: cannot create directory ‘../output/2’: File exists
+mkdir: cannot create directory ‘../output/2/obspy’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c24501.rc.fas.harvard.edu:05080] 1 more process has sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c24501.rc.fas.harvard.edu:05080] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c24501.rc.fas.harvard.edu:05080] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+mkdir: cannot create directory ‘../output/4’: File exists
+mkdir: cannot create directory ‘../output/4/obspy’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c24501.rc.fas.harvard.edu:08400] 3 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c24501.rc.fas.harvard.edu:08400] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c24501.rc.fas.harvard.edu:08400] 3 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+mkdir: cannot create directory ‘../output/8’: File exists
+mkdir: cannot create directory ‘../output/8/obspy’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c24501.rc.fas.harvard.edu:11552] 7 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c24501.rc.fas.harvard.edu:11552] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c24501.rc.fas.harvard.edu:11552] 7 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+mkdir: cannot create directory ‘../output/16’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c24501.rc.fas.harvard.edu:12574] 15 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c24501.rc.fas.harvard.edu:12574] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c24501.rc.fas.harvard.edu:12574] 15 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+mkdir: cannot create directory ‘../output/32’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c24501.rc.fas.harvard.edu:13459] 31 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c24501.rc.fas.harvard.edu:13459] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c24501.rc.fas.harvard.edu:13459] 31 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+mkdir: cannot create directory ‘../output/1’: File exists
+mkdir: cannot create directory ‘../output/1/obspy’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c24501
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c24501
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+ WARNING (norm_resp): computed and reported sensitivities differ by more than 5 percent. 
+	 Execution continuing.
+mkdir: cannot create directory ‘../output’: File exists
+mkdir: cannot create directory ‘../output/1’: File exists
+mkdir: cannot create directory ‘../output/1/SeisIO’: File exists
+mkdir: cannot create directory ‘../output/2’: File exists
+mkdir: cannot create directory ‘../output/2/SeisIO’: File exists
+mkdir: cannot create directory ‘../output/4’: File exists
+mkdir: cannot create directory ‘../output/4/SeisIO’: File exists
+mkdir: cannot create directory ‘../output/8’: File exists
+mkdir: cannot create directory ‘../output/8/SeisIO’: File exists
+mkdir: cannot create directory ‘../output/10’: File exists
+mkdir: cannot create directory ‘../output/10/SeisIO’: File exists
+mkdir: cannot create directory ‘../output/1’: File exists
+mkdir: cannot create directory ‘../output/1/SeisIO’: File exists
+mkdir: cannot create directory ‘../output/2’: File exists
+mkdir: cannot create directory ‘../output/2/SeisIO’: File exists
+mkdir: cannot create directory ‘../output/4’: File exists
+mkdir: cannot create directory ‘../output/4/SeisIO’: File exists
+slurmstepd: error: *** JOB 25944587 ON holy7c24501 CANCELLED AT 2019-10-01T06:19:32 DUE TO TIME LIMIT ***

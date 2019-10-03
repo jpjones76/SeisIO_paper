@@ -1,0 +1,3 @@
+rover   0.9807
+obspy   1.0786
+SeisIO   0.9320
