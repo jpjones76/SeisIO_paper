@@ -25,6 +25,6 @@ end
 if isdir("Benchmarks")
   println(bench_dir * " found, not downloading benchmark data.")
 else
-  import SeisIO: svn_get
-  svn_get("https://github.com/jpjones76/SeisIO-TestData/trunk/Benchmarks", "Benchmarks")
+  import SeisIO: get_svn
+  get_svn("https://github.com/jpjones76/SeisIO-TestData/trunk/Benchmarks", "Benchmarks")
 end
