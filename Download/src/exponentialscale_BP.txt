@@ -1,2 +1,2 @@
-obspy   0.9173
-SeisIO   0.7133
+obspy   0.9232
+SeisIO   0.9611

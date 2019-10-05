@@ -23,7 +23,7 @@ We use the [Harvard RC cluster](https://www.rc.fas.harvard.edu/cluster/) in this
 
 - Architecture:          x86_64
 - CPU(s):                32
-- Model name: Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+- Model name: Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90 GHz
 - RAM: 64GB
 
 

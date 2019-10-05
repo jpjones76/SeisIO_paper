@@ -1,0 +1,212 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+mkdir: cannot create directory ‘../output’: File exists
+mkdir: cannot create directory ‘../output/1’: File exists
+mkdir: cannot create directory ‘../output/1/obspy’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c08602
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c08602
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+sleep: invalid time interval ‘to’
+sleep: invalid time interval ‘properly’
+sleep: invalid time interval ‘exit’
+sleep: invalid time interval ‘all’
+sleep: invalid time interval ‘mpi’
+sleep: invalid time interval ‘processors’
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘../output/2’: File exists
+mkdir: cannot create directory ‘../output/2/obspy’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c08602
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c08602
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c08602.rc.fas.harvard.edu:452740] 1 more process has sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c08602.rc.fas.harvard.edu:452740] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c08602.rc.fas.harvard.edu:452740] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+sleep: invalid time interval ‘to’
+sleep: invalid time interval ‘properly’
+sleep: invalid time interval ‘exit’
+sleep: invalid time interval ‘all’
+sleep: invalid time interval ‘mpi’
+sleep: invalid time interval ‘processors’
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘../output/4’: File exists
+mkdir: cannot create directory ‘../output/4/obspy’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c08602
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c08602
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c08602.rc.fas.harvard.edu:454527] 3 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c08602.rc.fas.harvard.edu:454527] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c08602.rc.fas.harvard.edu:454527] 3 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+sleep: invalid time interval ‘to’
+sleep: invalid time interval ‘properly’
+sleep: invalid time interval ‘exit’
+sleep: invalid time interval ‘all’
+sleep: invalid time interval ‘mpi’
+sleep: invalid time interval ‘processors’
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘../output/8’: File exists
+mkdir: cannot create directory ‘../output/8/obspy’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c08602
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c08602
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c08602.rc.fas.harvard.edu:455961] 7 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c08602.rc.fas.harvard.edu:455961] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c08602.rc.fas.harvard.edu:455961] 7 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+sleep: invalid time interval ‘to’
+sleep: invalid time interval ‘properly’
+sleep: invalid time interval ‘exit’
+sleep: invalid time interval ‘all’
+sleep: invalid time interval ‘mpi’
+sleep: invalid time interval ‘processors’
+Try 'sleep --help' for more information.
+mkdir: cannot create directory ‘../output/10’: File exists
+mkdir: cannot create directory ‘../output/10/obspy’: File exists
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            holy7c08602
+  Device name:           i40iw0
+  Device vendor ID:      0x8086
+  Device vendor part ID: 14289
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           holy7c08602
+  Local device:         i40iw0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[holy7c08602.rc.fas.harvard.edu:456607] 9 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[holy7c08602.rc.fas.harvard.edu:456607] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[holy7c08602.rc.fas.harvard.edu:456607] 9 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+sleep: invalid time interval ‘to’
+sleep: invalid time interval ‘properly’
+sleep: invalid time interval ‘exit’
+sleep: invalid time interval ‘all’
+sleep: invalid time interval ‘mpi’
+sleep: invalid time interval ‘processors’
+Try 'sleep --help' for more information.

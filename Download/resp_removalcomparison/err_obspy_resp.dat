@@ -1,0 +1,29 @@
+ERROR: LoadError: PyError (PyImport_ImportModule
+
+The Python package obspy could not be found by pyimport. Usually this means
+that you did not install obspy in the Python version being used by PyCall.
+
+PyCall is currently configured to use the Julia-specific Python distribution
+installed by the Conda.jl package.  To install the obspy module, you can
+use `pyimport_conda("obspy", PKG)`, where PKG is the Anaconda
+package the contains the module obspy, or alternatively you can use the
+Conda package directly (via `using Conda` followed by `Conda.add` etcetera).
+
+Alternatively, if you want to use a different Python distribution on your
+system, such as a system-wide Python (as opposed to the Julia-specific Python),
+you can re-configure PyCall with that Python.   As explained in the PyCall
+documentation, set ENV["PYTHON"] to the path/name of the python executable
+you want to use, run Pkg.build("PyCall"), and re-launch Julia.
+
+) <class 'ModuleNotFoundError'>
+ModuleNotFoundError("No module named 'obspy'")
+
+Stacktrace:
+ [1] pyimport(::String) at /n/home03/kokubo/.julia/packages/PyCall/ttONZ/src/PyCall.jl:544
+ [2] top-level scope at /n/scratchssdlfs/denolle_lab/kokubo/SeisIO_Validation/resp_removalcomparison/test-ReadandRemoval_TA.jl:9
+ [3] include at ./boot.jl:328 [inlined]
+ [4] include_relative(::Module, ::String) at ./loading.jl:1094
+ [5] include(::Module, ::String) at ./Base.jl:31
+ [6] exec_options(::Base.JLOptions) at ./client.jl:295
+ [7] _start() at ./client.jl:464
+in expression starting at /n/scratchssdlfs/denolle_lab/kokubo/SeisIO_Validation/resp_removalcomparison/test-ReadandRemoval_TA.jl:9

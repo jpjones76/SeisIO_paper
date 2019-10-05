@@ -1,0 +1,10 @@
+.DS_Store
+output/*/rover/data/*
+output/*/obspy/RAW_DATA*
+output/*/SeisIO/seisdownload_tmp
+output/*/SeisIO/mseed
+output/*/rover/logs/*.log
+!output/*/rover/logs/retrieve.log
+resp_removalcomparison/*.mseed
+resp_removalcomparison/*.csv
+result

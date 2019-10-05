@@ -31,7 +31,7 @@ index=True
 # call summary after retrieval?
 post-summary=True
 # output data format. Choose from "mseed" (miniSEED) or "asdf" (ASDF)
-output-format=asdf
+output-format=mseed
 # name of ASDF file when ASDF output is specified
 asdf-filename=asdf.h5
 # station service url

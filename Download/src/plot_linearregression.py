@@ -12,20 +12,15 @@ NW_TA = [1,2,4,8] #Number of Workers
 NW_BP = [1,2,4,8,16,32] # number of workers
 # 1. TA
 dsize_TA = 6635.5674 #[MB]
-rover_TA = [57.1*60, 27.3*60, 14.0*60, 7.4*60] #(nw, time) = (10, 5.8*60)
-obspy_TA = [1983.27288818, 867.22932243, 433.88771629, 206.68937683] #(nw, time) = (10, NaN)
-SeisIO_TA = [1156.97683001, 540.55473900, 314.38477707, 160.92335701] #(nw, time) = (10, 160.88732409)
+#rover_TA = [1.1*60*60, 30.8*60, 16.2*60, 8*60] #(nw, time) = (10, 16.0*60)
+#obspy_TA = [2176.23, 2001.66629148, 1797.66759729, 968.61585855] #(nw, time) = (10, 739.71695280)
+rover_TA = [34.7*60, 18.5*60, 7.2*60, 4.1*60] #(nw, time) = (10, 16.0*60)
+obspy_TA = [2176.22648287, 1093.44593859, 578.86283278, 283.33756423] #(nw, time) = (10, 739.71695280)
+SeisIO_TA = [1742.08816409, 916.23014092, 436.72494221, 264.05373502] #(nw, time) = (10, 423.23682714)
 # 2. BP
-dsize_BP = 6274.9970 #[MB]
-obspy_BP = [3873.94928622, 2130.17192125, 1070.35983872, 545.40759301, 289.60592937, 171.31436825]
-SeisIO_BP = [1015.56813288, 501.46771002, 248.90292001, 185.52307582, 114.50451303, 82.02367902]
-# 3. Instrumental resp
-dsize_resp = 396.6349 #[MB]
-chunknum = 2 * 10 * 3 # 2 days, 10 station with 3 channel
-obspy_respref = 277.53793502 # 2 days, 10 station with 3 channel
-obspy_resp = 3491.07119632
-SeisIO_respref = 85.28962803
-SeisIO_resp = 93.50685596
+dsize_BP = 17627.4236 #[MB]
+obspy_BP = [10224.24507380, 5283.88453650, 2541.56301594, 1350.99040246, 703.44365788, 441.18909049]
+SeisIO_BP = [3974.19804406, 1242.65623403, 698.06878400, 373.56645608, 187.04703999, 132.37026000]
 #-------------------------------------------------------------------#
 
 #---plot configuration---#
@@ -76,8 +71,8 @@ if IfplotFigure1:
     markersize_s = 120
 
     ax1.scatter(NW_TA, y_s_TA, marker="D", s=markersize_s, zorder=10, clip_on=False, c=ju_col, edgecolors='k', label=ju_label)
-    ax1.scatter(NW_TA, y_o_TA, marker="s", s=markersize_o, zorder=10, clip_on=False, c=py_col, edgecolors='k', label=py_label)
-    ax1.scatter(NW_TA, y_r_TA, marker="v", s=markersize_r, zorder=10, clip_on=False, c=rover_col, edgecolors='k', label=rover_label)
+    ax1.scatter(NW_TA, y_o_TA, marker="s", s=markersize_o, zorder=11, clip_on=False, c=py_col, edgecolors='k', label=py_label)
+    ax1.scatter(NW_TA, y_r_TA, marker="v", s=markersize_r, zorder=12, clip_on=False, c=rover_col, edgecolors='k', label=rover_label)
 
     # polyfit
     m_r,b_r = np.polyfit(np.log10(NW_TA), np.log10(y_r_TA), 1)
@@ -110,7 +105,7 @@ if IfplotFigure1:
     ax1.set_title('TA: IRISDMC', fontsize=16, color="black", fontweight="bold", family="serif")
 
     plt.xlim(1, 8)
-    plt.ylim(1, 100)
+    plt.ylim(1, 40)
     ax1.legend(loc=2, markerscale=1.0, fontsize=14)
 
     plt.setp(plt.gca().get_yticklabels(), fontsize=14.0, color="black", fontweight="bold", family="serif")
@@ -140,7 +135,7 @@ if IfplotFigure1:
     ax2.get_yaxis().set_major_formatter(mattk.ScalarFormatter())
 
     ax2.scatter(NW_BP, y_s_BP, marker="D", s=markersize_s, zorder=10, clip_on=False, c=ju_col, edgecolors='k', label=ju_label)
-    ax2.scatter(NW_BP, y_o_BP, marker="s", s=markersize_o, zorder=10, clip_on=False, c=py_col, edgecolors='k', label=py_label)
+    ax2.scatter(NW_BP, y_o_BP, marker="s", s=markersize_o, zorder=9, clip_on=False, c=py_col, edgecolors='k', label=py_label)
 
     # polyfit
     mb_o,bb_o = np.polyfit(np.log10(NW_BP), np.log10(y_o_BP), 1)
@@ -165,7 +160,7 @@ if IfplotFigure1:
     ax2.set_title('BP: NCEDC', fontsize=16, color="black", fontweight="bold", family="serif")
 
     plt.xlim(1, 32)
-    plt.ylim(1, 100)
+    plt.ylim(1, 200)
     ax2.legend(loc=2, markerscale=1.0, fontsize=14.0)
 
     plt.setp(plt.gca().get_yticklabels(), fontsize=14.0, color="black", fontweight="bold", family="serif")
