@@ -21,6 +21,9 @@ Downloadable benchmark tests and raw results from Jones et al., SeisIO: a fast, 
    + Start python3.
    + At the prompt: `exec(open("ObsPy_bench1.py").read())`
 4. **SeisIO**
+   + Do either of these:
+      - Ensure that you have a command-line svn client installed (Ubuntu 18.04: sudo apt install subversion)
+      - Download benchmark test data from https://github.com/jpjones76/SeisIO-TestData/tree/master/Benchmarks
    + Start Julia in the root directory of this project.
    + At the Julia prompt:
 
