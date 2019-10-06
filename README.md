@@ -1,5 +1,5 @@
 # SeisIO_paper
-material intended for publication with SeisIO
+Downloadable benchmark tests and raw results from Jones et al., SeisIO: a fast, efficient geophysical data architecture for the Julia language, submitted to SRL.
 
 # How to Run Benchmarks
 1. (Optional) Get restricted files; see "Data Sources and Availability".
