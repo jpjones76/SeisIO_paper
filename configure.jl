@@ -21,10 +21,3 @@ if isfile(sacfile)
 else
   include("run_sac_stats.jl")
 end
-
-if isdir("Benchmarks")
-  println(bench_dir * " found, not downloading benchmark data.")
-else
-  import SeisIO: get_svn
-  get_svn("https://github.com/jpjones76/SeisIO-TestData/trunk/Benchmarks", "Benchmarks")
-end
