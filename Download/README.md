@@ -1,11 +1,22 @@
 # Download Benchmarks
 #### September 30 2019 Kurama Okubo
 
+# Benchmark for Download Throughput
+
+## CPU info
+We use the [Harvard RC cluster](https://www.rc.fas.harvard.edu/cluster/) in this benchmark test:
+
+- Architecture:          x86_64
+- CPU(s):                32
+- Model name: Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90 GHz
+- RAM: 64GB
+
 ## Software
 1. [__ROVER__](https://iris-edu.github.io/rover/) a command line tool to robustly retrieve geophysical timeseries data from data centers such as IRIS DMC
 2. [__Obspy__](https://github.com/obspy/obspy/wiki) an open-source project dedicated to provide a Python framework for processing seismological data.
 In this project, we used [__NoisePy__](https://github.com/chengxinjiang/Noise_python), a Python package designed for fast and easy computation of ambient noise cross-correlation functions.    
 3. [__SeisIO__](http://seisio.readthedocs.org) Julia-based collection of utilities for reading, downloading, and processing geophysical timeseries data.
+
 
 ## Version info
 1. __ROVER__ 1.0.4 installed from [https://iris-edu.github.io/rover](https://iris-edu.github.io/rover/)
@@ -18,18 +29,8 @@ Date:   Sun Sep 29 02:16:47 2019 -0700
 fix for Julia 1.2.0 Pkg("update") breaking MbedTLS dependency
 ```
 
-## CPU info
-We use the [Harvard RC cluster](https://www.rc.fas.harvard.edu/cluster/) in this benchmark test:
-
-- Architecture:          x86_64
-- CPU(s):                32
-- Model name: Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90 GHz
-- RAM: 64GB
-
-
 ## Dataset
 1. 10 stations in network TA from [IRIS DMC](https://ds.iris.edu/ds/nodes/dmc/):
-
 
 |net|sta|cha|
 |---|---|---|
@@ -64,7 +65,7 @@ We use the [Harvard RC cluster](https://www.rc.fas.harvard.edu/cluster/) in this
 | BP | SCYB  | BP* |
 
 - Start time = 2006-03-01T00:00:00
-- End time = 2006-04-01T00:00:00
+- End time = 2006-06-01T00:00:00
 
 
 ## Workflow
@@ -81,7 +82,7 @@ We use the [Harvard RC cluster](https://www.rc.fas.harvard.edu/cluster/) in this
 * Run with cpus > 32 using these shell commands:
 
 ```console
-cd SeisIO_Validation/src
+cd SeisIO_paper/Download/src
 #Prepare request
 python make_request_TA.py
 python make_request_BP.py
@@ -96,7 +97,56 @@ sh run_SeisIO.sh
 #remove datasets as the total size of output is huge
 #this command does not remove texts for computational time
 sh remove_datasets.sh
+
+#plot result
+python plot_linearregression.py
 ```
 
-## Results
-See manuscript
+# Processing Example: Instrument response removal
+
+## CPU info
+We use the [Harvard RC cluster](https://www.rc.fas.harvard.edu/cluster/) in this benchmark test:
+
+- macOS Mojave v10.14.6       
+- CPU(s): 1
+- Model name: Intel(R) Core i5 CPU @ 3.4 GHz
+- RAM: 8GB
+
+## Version info
+2. __Obspy__ 1.1.1 installed from [https://github.com/obspy/obspy/wiki/Installation-via-Anaconda](https://github.com/obspy/obspy/wiki/Installation-via-Anaconda)
+3. __SeisIO__ v0.4.0 uses the latest commit from the master branch:
+```
+> commit 97bec05262f71ec965c8d685cf464def3345d367
+Author: Joshua Jones <jpjones76@users.noreply.github.com>
+Date:   Sun Sep 29 02:16:47 2019 -0700
+fix for Julia 1.2.0 Pkg("update") breaking MbedTLS dependency
+```
+
+## Dataset
+1. 1 stations in network TA from [IRIS DMC](https://ds.iris.edu/ds/nodes/dmc/):
+
+|net|sta|cha|
+|---|---|---|
+| TA | 121A  | HHZ |
+
+- Start time = 2018-03-01T00:00:00
+- End time = 2018-03-02T00:00:00
+
+## Workflow
+1. run `python getdata_TA.121A.py` to download waveform and stationxml.
+2. run instrumental response removal test scripts, `test-ReadandRemoval_Obspy_TA.py` and `test-ReadandRemoval_SeisIO_TA.jl`.
+
+## Reproducing the Results
+
+```console
+cd SeisIO_paper/Download/resp_removalcomparison
+#donwload data
+python getdata_TA.121A.py
+#run all downloading processes
+python test-ReadandRemoval_Obspy_TA.py
+julia test-ReadandRemoval_Obspy_TA
+
+#plot result
+python plot_removalresp_result.py
+python plot_edgeeffect.py
+```
