@@ -26,3 +26,14 @@ BenchmarkTools.DEFAULT_PARAMETERS.seconds   = 60
 BenchmarkTools.DEFAULT_PARAMETERS.samples   = 100
 BenchmarkTools.DEFAULT_PARAMETERS.gcsample  = true
 BenchmarkTools.DEFAULT_PARAMETERS.evals     = 1
+
+# Generate a unique hash for the test machine's hardware
+function syshash()
+  h = hash(Sys.total_memory()/1024^2)
+  h = hash(Sys.cpu_info()[1].model, h)
+  h = hash(Sys.MACHINE, h)
+  h = hash(Sys.CPU_NAME, h)
+  h = hash(Sys.CPU_THREADS, h)
+  h = hash(Sys.JIT, h)
+  return h
+end
