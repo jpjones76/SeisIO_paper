@@ -2,6 +2,7 @@
 using SeisIO, BenchmarkTools, Printf, Statistics
 import SeisIO: safe_isdir, safe_isfile
 include("run_benchmarks.jl")
+include("run_benchmarks_mmap.jl")
 include("nice_disp.jl")
 include("declarations.jl")
 
