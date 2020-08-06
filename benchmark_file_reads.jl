@@ -5,7 +5,7 @@ include("run_benchmarks.jl")
 include("run_benchmarks_mmap.jl")
 include("nice_disp.jl")
 include("declarations.jl")
-puke
+
 # adjust as needed
 i0 = 1   # min 1
 i1 = 11  # max 11
